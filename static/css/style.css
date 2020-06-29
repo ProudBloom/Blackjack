@@ -6,9 +6,13 @@
 
 .container
 {
-    width: 75%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
+}
+
+.container h3
+{
+    padding: 20px;
 }
 
 .flex-blackjack-row1, .flex-blackjack-row2
@@ -17,11 +21,57 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;
+    background: url('../img/table.jpg') center;
+    color: #f1f1f1;
 }
 
-.flex-blackjack-row1 
+.flex-blackjack-row1 div
 {
-    background: url('../img/table.jpg') center;
-    background-repeat: no-repeat;
-    color: #f1f1f1;
+    flex: 1;    /* same proportions between divs in flex row */
+    padding: 10px;
+    text-align: center;
+    height: 550px;
+}
+
+#your-box
+{
+    border-right: 3px solid #f1f1f1;
+}
+
+.flex-blackjack-row1 img
+{
+    height: 25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row2 button
+{
+    width: 200px;
+}
+
+.flex-blackjack-row3
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;;
+}
+
+.flex-blackjack-row3 table
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.flex-blackjack-row3 table th, td
+{
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#your-box img
+{
+    z-index: 10;
+    border-radius: 15px;
 }
