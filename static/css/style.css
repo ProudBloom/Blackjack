@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-blackjack-row1, .flex-blackjack-row2
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.flex-blackjack-row1 
+{
+    background: url('../img/table.jpg') center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+}
