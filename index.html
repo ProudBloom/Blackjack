@@ -10,8 +10,9 @@
 
     <body>
         <div class='container'>
-            <h3><span id='blackjack-result'>Let's play!</span></h3>
-    
+            <h3> <span id='blackjack-result'>Let's play!</span> </h3>
+            <button id="navigate-to-menu-btt">&lt</button>
+
             <div class='flex-blackjack-row1'>
                 <div id='your-box'>
                     <h2>You: <span id='your-blackjack-result'>0</span></h2>
@@ -32,19 +33,41 @@
             <div class='flex-blackjack-row3'>
                 <table>
                     <tr>
-                        <th>Wins</th>
-                        <th>Losses</th>
-                        <th>Draws</th>
+                        <th style="color: #146B3A">Wins</th>
+                        <th style="color: #EA4630">Losses</th>
+                        <th style="color: #F8B229">Draws</th>
                     </tr>
                     <tr>
-                        <td><span id='wins'>0</span></td>
-                        <td><span id='losses'>0</span></td>
-                        <td><span id='draws'>0</span></td>
+                        <td><span id='wins' style="color: #146B3A; font-weight: bold;">0</span></td>
+                        <td><span id='losses' style="color: #EA4630; font-weight: bold;">0</span></td>
+                        <td><span id='draws'  style="color: #F8B229; font-weight: bold;">0</span></td>
                     </tr>
                 </table>
             </div>
 
         </div>
+
+        <div class="menu">
+            <h1 class="menu-header">Blackjack</h1>
+            <button id="rules-btt">Rules</button>
+            <button id="play-btt">Play</button>
+        </div>
+        
+        <div class="rules">
+            <button id="close-rules-btt">+</button>
+            <p>
+                Press <span style="color: #007bff; font-weight: bolder;">HIT</span> button to play a card. <br>
+                Each card has it's own value matching that of a card. <br>
+                <b>J,Q,K</b> are worth 10 points each. <br>
+                <b>A</b> is worth either 1 point or 11 points depending on your score. <br>
+                Press <span style="color: #ffc107; font-weight: bolder;">STAND</span> button when you feel like it (don't exceed 21 points or you will bust!). <br>
+                After pressing this button, the AI will play. <br>
+                The closest score to the value of 21 points wins! <br>
+                Press the <span style="color: #dc3545; font-weight: bolder;">DEAL</span> button to start a new round and clear the table. <br>
+                <span style="font-weight: bolder; text-decoration: underline;">Enjoy!</span>
+            </p>
+        </div>
+
         <script src="./static/js/logic.js" defer></script>
     </body>
 

@@ -1,3 +1,9 @@
+@font-face 
+{
+    font-family: "CofeeTin";
+    src: url("../fonts/CoffeetinInitials-YXJ2.ttf");
+}
+
 *
 {
     margin: 0;
@@ -8,6 +14,19 @@
 {
     width: 100%;
     text-align: center;
+}
+
+#navigate-to-menu-btt
+{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #696969;
+    position: absolute;
+    top: 10;
+    left: 30;
 }
 
 .container h3
@@ -74,4 +93,73 @@
 {
     z-index: 10;
     border-radius: 15px;
+}
+
+.menu
+{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-header
+{
+    height: 30%;
+    margin-top: 10%;
+    font-family: "CofeeTin";
+    font-size: 120px;
+}
+
+.menu button
+{
+    border: none;
+    outline: none;
+    font-size: 68px;
+    font-weight: bold;
+    color: #696969;
+    padding: 2rem;
+    transition: ease .5s;
+}
+
+.menu button:hover
+{
+    color: #A9A9A9;
+}
+
+.rules
+{
+    display: none;
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules p
+{
+    color: #f1f1f1;
+    font-size: 2rem;
+}
+
+.rules button
+{
+    color: #f1f1f1;
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    top: 20;
+    right: 40;
+    font-size: 3rem;
+    font-weight: bold;
+    transform: rotate(45deg);
 }
