@@ -1,6 +1,6 @@
 # Blackjack ♠️
 
-A fully interactive game of blackjack with an AI! 🃏
+A fully interactive game of blackjack with an AI!
 
 ## Project implemented using 🔨
 * HTML
